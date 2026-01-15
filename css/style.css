@@ -43,12 +43,42 @@ body {
 	list-style: none;
 }
 #header-area .navbar .nav-links .nav-item .nav-link {
+	display: inline-block;
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: 600;
 	color: #3a3a3a;
+	transition: transform 0.4s ease-in-out;
+}
+
+#header-area .navbar .nav-links .nav-item .nav-link:hover {
+	transform: scale(1.25);
 }
 #header-area .navbar .nav-links .nav-item .nav-link i {
 	font-size: 1.5rem;
 }
 /* Header area ends */
+
+/* Banner area start */
+
+#banner .banner-contents {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Banner area ends */
+
+/* Responsive area start */
+
+@media screen and (max-width: 576px) {
+	#header-area .navbar {
+		flex-direction: column;
+	}
+	#header-area .navbar .nav-links {
+		flex-direction: column;
+		gap: 20px;
+		margin-top: 50px;
+	}
+}
+/* Responsive area ends */
